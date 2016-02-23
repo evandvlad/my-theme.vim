@@ -2,7 +2,7 @@ highlight clear
 if exists('syntax_on') | syntax reset | endif
 set background=dark
 
-" map <F1> :echo synIDattr(synID(line("."), col("."), 1), "name")<CR>
+map <F1> :echo synIDattr(synID(line("."), col("."), 1), "name")<CR>
 
 let g:colors_name = 'my-theme'
 
@@ -45,9 +45,9 @@ call s:Hi("ColorColumn", "guibg=" . s:colors.base1)
 call s:Hi("Visual", "guibg=" . s:colors.base3)
 call s:Hi("Comment", "guifg=" . s:colors.base4)
 call s:Hi("String", "guifg=" . s:colors.light_green)
-call s:Hi("Number", "guifg=" . s:colors.orange)
+call s:Hi("Number", "guifg=" . s:colors.base6)
 call s:Hi("Statement", "guifg=" . s:colors.base5)
-call s:Hi("Special", "guifg=" . s:colors.orange)
+call s:Hi("Special", "guifg=" . s:colors.base6)
 call s:Hi("Identifier", "guifg=" . s:colors.base5)
 call s:Hi("Constant", "guifg=" . s:colors.light_grey)
 call s:Hi("Title", "guifg=" . s:colors.orange)
@@ -89,7 +89,7 @@ call s:Hi("DiffText", "guifg=" . s:colors.base7 . " guibg=" . s:colors.cyan)
 call s:Hi("Directory", "guifg=" . s:colors.cyan)
 call s:Hi("qfLineNr", "guifg=" . s:colors.blue)
 
-call s:Hi("htmlArg", "guifg=" . s:colors.blue)
+call s:Hi("htmlArg", "guifg=" . s:colors.light_grey)
 call s:Hi("htmlItalic", "guifg=" . s:colors.light_grey)
 call s:Hi("htmlBold", "guifg=" . s:colors.cyan)
 
@@ -120,8 +120,6 @@ call s:Hi("jsExceptions", "guifg=" . s:colors.dark_orange . " gui=bold")
 call s:Hi("jsBooleanTrue", "guifg=" . s:colors.cyan . " gui=bold")
 call s:Hi("jsBooleanFalse", "guifg=" . s:colors.cyan . " gui=bold")
 call s:Hi("jsFuncArgRest", "guifg=" . s:colors.base6)
-call s:Hi("jsNumber", "guifg=" . s:colors.base6)
-call s:Hi("jsFloat", "guifg=" . s:colors.base6)
 call s:Hi("jsFuncName", "guifg=" . s:colors.light_grey)
 call s:Hi("jsArrowFunction", "guifg=" . s:colors.light_grey)
 
