@@ -2,7 +2,7 @@ highlight clear
 if exists('syntax_on') | syntax reset | endif
 set background=dark
 
-map <F1> :echo synIDattr(synID(line("."), col("."), 1), "name")<CR>
+" map <F1> :echo synIDattr(synID(line("."), col("."), 1), "name")<CR>
 
 let g:colors_name = 'my-theme'
 
