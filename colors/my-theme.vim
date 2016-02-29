@@ -27,6 +27,7 @@ let s:colors.cyan = '#33859E'
 let s:colors.light_green = '#2aa889'
 let s:colors.bordo = '#823a36'
 let s:colors.dark_green = '#035b45'
+let s:colors.grey = '#727c7a'
 let s:colors.dark_orange = '#913a12'
 
 function! s:Hi(key, rule) 
@@ -43,7 +44,7 @@ call s:Hi("CursorLineNr", "guifg=" . s:colors.base5 . " guibg=" . s:colors.base1
 call s:Hi("SignColumn", "guibg=" . s:colors.base1)
 call s:Hi("ColorColumn", "guibg=" . s:colors.base1)
 call s:Hi("Visual", "guibg=" . s:colors.base3)
-call s:Hi("Comment", "guifg=" . s:colors.dark_green . " gui=italic")
+call s:Hi("Comment", "guifg=" . s:colors.grey . " gui=italic")
 call s:Hi("String", "guifg=" . s:colors.light_green)
 call s:Hi("Number", "guifg=" . s:colors.base6)
 call s:Hi("Statement", "guifg=" . s:colors.base5)
